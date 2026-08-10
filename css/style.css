@@ -265,6 +265,51 @@ fieldset legend{font-size:.85rem;font-weight:600;color:var(--ink);padding:0 6px;
 .dossier-row .k{font-size:.82rem;color:var(--muted);font-weight:600;}
 .dossier-row .v{font-size:.92rem;color:var(--ink);}
 .pill{display:inline-block;background:#eef0fe;color:var(--primary);font-size:.78rem;font-weight:600;padding:3px 10px;border-radius:20px;}
+.pill.status-actif{background:#e4f7e9;color:#1c7c3c;}
+.pill.status-ferme{background:#f1f2f6;color:var(--muted);}
+
+/* ---------- Liste des cas ---------- */
+.list-shell{
+  background:#fff;border:1px solid var(--border);border-radius:var(--radius);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+table.cases{width:100%;border-collapse:collapse;font-size:.9rem;}
+table.cases th{
+  text-align:left;background:var(--bg-soft);color:var(--muted);font-size:.74rem;
+  text-transform:uppercase;letter-spacing:.05em;font-weight:700;
+  padding:14px 20px;border-bottom:1px solid var(--border);
+}
+table.cases td{padding:15px 20px;border-bottom:1px solid var(--border);color:var(--ink-soft);vertical-align:middle;}
+table.cases tr:last-child td{border-bottom:none;}
+table.cases tr:hover td{background:#fafaff;}
+table.cases td.num{font-weight:600;color:var(--ink);}
+table.cases td.go a{font-weight:600;font-size:.85rem;white-space:nowrap;}
+.list-toolbar{
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
+  margin-bottom:20px;
+}
+.list-toolbar .count{color:var(--muted);font-size:.9rem;}
+.actions-cell{display:flex;gap:8px;flex-wrap:wrap;}
+.btn-sm{
+  display:inline-block;font-size:.78rem;font-weight:600;padding:7px 13px;border-radius:6px;
+  border:1px solid var(--border);background:#fff;color:var(--ink-soft);white-space:nowrap;cursor:pointer;
+}
+.btn-sm:hover{border-color:var(--primary);color:var(--primary);text-decoration:none;background:#f7f8ff;}
+.btn-sm.primary{background:var(--primary);border-color:var(--primary);color:#fff;}
+.btn-sm.primary:hover{background:var(--primary-dark);border-color:var(--primary-dark);color:#fff;}
+.btn-sm.danger{color:#c0392b;border-color:#f3d3d0;background:#fdf2f1;}
+.btn-sm.danger:hover{background:#fbe4e2;border-color:#e5a9a3;color:#c0392b;}
+@media(max-width:700px){
+  table.cases thead{display:none;}
+  table.cases, table.cases tbody, table.cases tr, table.cases td{display:block;width:100%;}
+  table.cases tr{border-bottom:1px solid var(--border);padding:14px 18px;}
+  table.cases td{border-bottom:none;padding:4px 0;}
+  table.cases td::before{
+    content:attr(data-label);display:block;font-size:.7rem;font-weight:700;
+    text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:2px;
+  }
+  table.cases td.actions-cell::before{margin-bottom:6px;}
+}
 
 /* ---------- Under construction ---------- */
 .wip-shell{

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modification d'un cas — Truc et Chose, avocats</title>
+<title>Liste des cas — Truc et Chose, avocats</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -28,16 +28,52 @@
   </div>
 </header>
 
-<div class="wrap breadcrumb"><a href="index.html">Accueil</a> / Modification d'un cas</div>
+<div class="wrap breadcrumb"><a href="index.html">Accueil</a> / Liste des cas</div>
 
 <section>
   <div class="wrap">
-    <div class="wip-shell">
-      <div class="cone">🛠</div>
-      <span class="badge wip">En construction</span>
-      <h2 style="margin-top:14px;">Modification d'un cas</h2>
-      <p>Cette page est en cours de développement. Elle permettra bientôt de mettre à jour la description, la catégorie et l'avocat responsable d'un dossier existant.</p>
-      <a href="index.html" class="btn" style="margin-top:10px;">Retour à l'accueil</a>
+    <div class="section-head" style="margin-bottom:24px;">
+      <span class="eyebrow-text">Dossiers de la firme</span>
+      <h2>Liste des cas</h2>
+    </div>
+
+    <div class="list-toolbar">
+      <span class="count">0 dossiers</span>
+      <a href="inscription.html" class="btn-sm primary">＋ Inscrire un nouveau cas</a>
+    </div>
+
+    <div class="list-shell">
+      <table class="cases">
+        <thead>
+          <tr>
+            <th>N° dossier</th>
+            <th>Client</th>
+            <th>Catégorie</th>
+            <th>Avocat responsable</th>
+            <th>Statut</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+     
+
+         <!--<tr>
+            <td class="num" data-label="N° dossier">2375</td>
+            <td data-label="Client">Groupe Rivard &amp; associés</td>
+            <td data-label="Catégorie"><span class="pill">Incorporation, gestion des affaires</span></td>
+            <td data-label="Avocat responsable">Fred Chose</td>
+            <td data-label="Statut"><span class="pill status-ferme">Fermé</span></td>
+            <td data-label="Actions">
+              <div class="actions-cell">
+                <a href="cas-existant.html" class="btn-sm">Voir</a>
+                <a href="modification.html" class="btn-sm">Modifier</a>
+                <a href="annulation.html" class="btn-sm danger">Supprimer</a>
+              </div>
+            </td>
+          </tr>
+        -->
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -53,8 +89,15 @@
       <h4>Navigation</h4>
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="inscription.html">Inscription d'un cas</a></li>
+        <li><a href="inscription-commis.html">Créer un compte</a></li>
         <li><a href="connexion.html">Connexion</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Dossiers</h4>
+      <ul>
+        <li><a href="inscription.html">Inscription d'un cas</a></li>
+        <li><a href="liste-cas.html">Liste des cas</a></li>
       </ul>
     </div>
   </div>

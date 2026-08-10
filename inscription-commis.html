@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Connexion — Truc et Chose, avocats</title>
+<title>Inscription du commis — Truc et Chose, avocats</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -29,24 +29,37 @@
 </header>
 
 <div class="login-wrap">
-  <div class="login-card">
+  <div class="login-card" style="max-width:440px;">
     <div class="mark" style="width:44px;height:44px;border-radius:10px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.3rem;">T</div>
-    <h2>Connexion des commis</h2>
-    <p class="sub">Accédez au système de gestion des dossiers.</p>
+    <h2>Inscription du commis</h2>
+    <p class="sub">Créez votre compte pour accéder au système de gestion des dossiers.</p>
 
     <form>
       <div class="field" style="margin-bottom:16px;">
-        <label for="usager">Nom d'utilisateur</label>
-        <input type="text" id="usager" name="usager" placeholder="ex. l.ianniroberto">
+        <label for="nomComplet">Nom complet</label>
+        <input type="text" id="nomComplet" name="nomComplet" placeholder="ex. Louise Ianniroberto">
+      </div>
+      <div class="field" style="margin-bottom:16px;">
+        <label for="courriel">Courriel professionnel</label>
+        <input type="text" id="courriel" name="courriel" placeholder="ex. l.ianniroberto@trucetchose.co">
+      </div>
+      <div class="field" style="margin-bottom:16px;">
+        <label for="usagerCommis">Nom d'utilisateur</label>
+        <input type="text" id="usagerCommis" name="usagerCommis" placeholder="ex. l.ianniroberto">
+      </div>
+      <div class="field" style="margin-bottom:16px;">
+        <label for="mdpCommis">Mot de passe</label>
+        <input type="password" id="mdpCommis" name="mdpCommis" placeholder="••••••••">
       </div>
       <div class="field" style="margin-bottom:22px;">
-        <label for="mdp">Mot de passe</label>
-        <input type="password" id="mdp" name="mdp" placeholder="••••••••">
+        <label for="mdpConfirm">Confirmer le mot de passe</label>
+        <input type="password" id="mdpConfirm" name="mdpConfirm" placeholder="••••••••">
       </div>
-      <button type="button" class="btn" onclick="alert('Page statique — la connexion sera fonctionnelle au module 4.');">Se connecter</button>
+      <button type="button" class="btn" onclick="alert('Page statique — la création de compte sera fonctionnelle au module 4.');">Créer mon compte</button>
     </form>
 
     <div class="login-foot">
+      Déjà inscrit ? <a href="connexion.html">Se connecter</a><br>
       <a href="index.html">← Retour à l'accueil</a>
     </div>
   </div>
