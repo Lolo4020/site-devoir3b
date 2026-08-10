@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil — Truc et Chose, avocats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site" id="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand"><span class="mark">T</span> Truc &amp; Chose, avocats</a>
+    <nav class="primary">
+      <a href="index.html" class="current">Accueil</a>
+      <a href="inscription.html">Inscription</a>
+      <a href="connexion.html" class="btn-nav">Connexion</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" onclick="var h=document.getElementById('site-header');h.classList.toggle('nav-open');this.setAttribute('aria-expanded', h.classList.contains('nav-open'));">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <line x1="4" y1="7" x2="20" y2="7"></line>
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="17" x2="20" y2="17"></line>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow"></span>
+    <h1>Le système de gestion des dossiers</h1>
+    <p>Un seul endroit pour inscrire, modifier, consulter ou annuler les dossiers de la firme. Simple, rapide et toujours à jour.</p>
+    <a href="inscription.html" class="btn">Inscrire un nouveau cas</a>
+    <a href="connexion.html" class="btn secondary" style="margin-left:12px;">Connexion des commis</a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-text">Nos services</span>
+      <h2>Un accompagnement à chaque étape du dossier</h2>
+      <p style="margin-top:10px;">De l'ouverture à la fermeture, le système couvre tout le cycle de vie d'un dossier pour les commis de la firme.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="icon">＋</div>
+  
+        <h3>Ouverture de dossier</h3>
+        <p>Créez un dossier client complet en quelques minutes grâce à un formulaire guidé, inspiré de nos fiches papier.</p>
+   
+      </div>
+
+      <div class="service-card">
+        <div class="icon">✎</div>
+
+        <h3>Mise à jour de dossier</h3>
+        <p>Ajustez la description, la catégorie ou l'avocat responsable d'un cas au fil de son évolution.</p>
+
+      </div>
+
+      <div class="service-card">
+        <div class="icon">✕</div>
+
+        <h3>Fermeture de dossier</h3>
+        <p>Retirez proprement un dossier réglé ou abandonné de la liste des cas actifs de la firme.</p>
+    
+      </div>
+
+      <div class="service-card">
+        <div class="icon">☰</div>
+
+        <h3>Consultation de dossier</h3>
+        <p>Retrouvez en un clic les informations complètes d'un cas déjà inscrit dans le système.</p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow-text">À propos du système</span>
+      <h2 style="margin-top:8px;">Pensé pour les commis de la firme</h2>
+      <p>Ce site remplace les formulaires papier utilisés pour l'inscription, la modification, la confirmation et l'assignation des cas. Chaque commis peut ouvrir un dossier en quelques clics, sans ressaisir l'information à la main.</p>
+      <p>Pour l'instant, les pages affichent des données fictives. Elles seront reliées à la base de données des dossiers au module 4.</p>
+
+      <a href="mailto:info@trucetchose.co" class="btn">Nous écrire</a>
+    </div>
+
+    <div class="accordion">
+      <details open>
+        <summary>
+          Sécurité des données
+          <span class="toggle-pill" aria-hidden="true"></span>
+        </summary>
+        <div class="panel">Les dossiers sont hébergés et sauvegardés de façon sécurisée. Seuls les commis autorisés peuvent consulter ou modifier un cas.</div>
+      </details>
+      <details>
+        <summary>
+          Suivi en temps réel
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </summary>
+        <div class="panel">Chaque étape d'un dossier, de l'ouverture à la fermeture, est consignée pour en assurer le suivi.</div>
+      </details>
+      <details>
+        <summary>
+          Accès en tout temps
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </summary>
+        <div class="panel">Les commis peuvent consulter et inscrire des cas depuis n'importe quel poste du bureau, à toute heure.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="localisation">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-text">Où nous trouver</span>
+      <h2>Nos bureaux</h2>
+    </div>
+    <div class="map-shell">
+      <iframe src="https://maps.google.com/maps?q=Montr%C3%A9al%2C+Qu%C3%A9bec&z=12&output=embed" loading="lazy" title="Localisation du cabinet Truc et Chose, avocats"></iframe>
+      <div class="map-caption">
+        <span>1200, rue Principale, bureau 21 — Sainte-Nécropole (Québec) X1X 1X1</span>
+        <a href="https://maps.google.com/?q=Montr%C3%A9al,+Qu%C3%A9bec" target="_blank" rel="noopener">Itinéraire →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="site">
+  <div class="wrap footer-grid">
+    <div>
+      <h4>Truc et Chose, avocats</h4>
+      <p>1200, rue Principale, bureau 21<br>Sainte-Nécropole (Québec) X1X 1X1</p>
+      <p>Téléphone : 555 444-1919</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="inscription.html">Inscription d'un cas</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom wrap">
+    Travail scolaire — Applications informatiques en administration, 410-413-FD (60.2) — Devoir 3B
+  </div>
+</footer>
+
+</body>
+</html>

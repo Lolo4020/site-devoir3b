@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscription d'un cas — Truc et Chose, avocats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site" id="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand"><span class="mark">T</span> Truc &amp; Chose, avocats</a>
+    <nav class="primary">
+      <a href="index.html">Accueil</a>
+      <a href="inscription.html" class="current">Inscription</a>
+      <a href="connexion.html" class="btn-nav">Connexion</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" onclick="var h=document.getElementById('site-header');h.classList.toggle('nav-open');this.setAttribute('aria-expanded', h.classList.contains('nav-open'));">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <line x1="4" y1="7" x2="20" y2="7"></line>
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="17" x2="20" y2="17"></line>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="wrap breadcrumb"><a href="index.html">Accueil</a> / Inscription d'un cas</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:24px;">
+      <span class="eyebrow-text">Nouveau dossier</span>
+      <h2>Inscription d'un cas</h2>
+    </div>
+
+    <div class="note-box">
+      Page statique — cette page montre à quoi ressemblera le formulaire une fois relié à la base de données des dossiers (module 4). Aucune donnée n'est enregistrée pour l'instant.
+    </div>
+
+    <form class="form-shell">
+      <div class="letterhead">
+        <h2>Truc et Chose, avocats</h2>
+        <p>1200, rue Principale, bureau 21 — Sainte-Nécropole (Québec) X1X 1X1</p>
+        <p>555 444-1919</p>
+      </div>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date">
+        </div>
+
+        <div class="field">
+          <label>Nouveau client</label>
+          <div class="choice-row" style="margin-top:2px;">
+            <label><input type="radio" name="nouveauClient" checked> Oui</label>
+            <label><input type="radio" name="nouveauClient"> Non</label>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label for="nom">Nom du client</label>
+          <input type="text" id="nom" name="nom" placeholder="Nom et prénom">
+        </div>
+
+        <div class="field full">
+          <label for="adresse">Adresse</label>
+          <input type="text" id="adresse" name="adresse" placeholder="Numéro, rue, appartement">
+        </div>
+
+        <div class="field">
+          <label for="ville">Ville</label>
+          <input type="text" id="ville" name="ville">
+        </div>
+
+        <div class="field">
+          <label for="province">Province</label>
+          <input type="text" id="province" name="province" value="Québec">
+        </div>
+
+        <div class="field">
+          <label for="cp">Code postal</label>
+          <input type="text" id="cp" name="cp" placeholder="X1X 1X1">
+        </div>
+
+        <div class="field">
+          <label for="telBureau">Téléphone bureau</label>
+          <input type="tel" id="telBureau" name="telBureau" placeholder="(   )      -">
+        </div>
+
+        <div class="field">
+          <label for="telResidence">Téléphone résidence</label>
+          <input type="tel" id="telResidence" name="telResidence" placeholder="(   )      -">
+        </div>
+
+        <div class="field full">
+          <label for="description">Description brève du cas</label>
+          <textarea id="description" name="description" placeholder="60 mots maximum"></textarea>
+          <span class="hint">60 mots maximum</span>
+        </div>
+
+        <div class="field full">
+          <fieldset>
+            <legend>Catégorie</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="categorie"> Familial</label>
+              <label><input type="radio" name="categorie"> Incorporation, gestion des affaires</label>
+              <label><input type="radio" name="categorie"> Relations de travail</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="field full">
+          <fieldset>
+            <legend>Avocat(s) responsable(s)</legend>
+            <div class="form-grid" style="margin-top:8px;">
+              <div class="field">
+                <label><input type="checkbox" name="avocat" value="Lola Truc"> Lola Truc</label>
+                <label for="heuresTruc" style="font-weight:400;">Nombre d'heures prévues</label>
+                <input type="text" id="heuresTruc" name="heuresTruc" placeholder="ex. 5">
+              </div>
+              <div class="field">
+                <label><input type="checkbox" name="avocat" value="Fred Chose"> Fred Chose</label>
+                <label for="heuresChose" style="font-weight:400;">Nombre d'heures prévues</label>
+                <input type="text" id="heuresChose" name="heuresChose" placeholder="ex. 5">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <a href="index.html" class="btn outline">Annuler</a>
+        <button type="button" class="btn" onclick="alert('Page statique — l\'enregistrement sera fonctionnel au module 4.');">Enregistrer le cas</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-grid">
+    <div>
+      <h4>Truc et Chose, avocats</h4>
+      <p>1200, rue Principale, bureau 21<br>Sainte-Nécropole (Québec) X1X 1X1</p>
+      <p>Téléphone : 555 444-1919</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="inscription.html">Inscription d'un cas</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom wrap">
+    Travail scolaire — Applications informatiques en administration, 410-413-FD (60.2) — Devoir 3B
+  </div>
+</footer>
+
+</body>
+</html>
