@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Connexion — Truc et Chose, avocats</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion — Truc et Chose, avocats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="site" id="site-header">
-  <div class="nav-row">
-    <a href="index.html" class="brand"><span class="mark">T</span> Truc &amp; Chose, avocats</a>
-    <nav class="primary">
-      <a href="index.html">Accueil</a>
-      <a href="inscription-commis.html">Inscription</a>
-      <a href="connexion.html" class="btn-nav">Connexion</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" onclick="var h=document.getElementById('site-header');h.classList.toggle('nav-open');this.setAttribute('aria-expanded', h.classList.contains('nav-open'));">
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <line x1="4" y1="7" x2="20" y2="7"></line>
-        <line x1="4" y1="12" x2="20" y2="12"></line>
-        <line x1="4" y1="17" x2="20" y2="17"></line>
-      </svg>
-    </button>
-  </div>
-</header>
+  <header class="site" id="site-header">
+    <div class="nav-row">
+      <a href="index.html" class="brand"><span class="mark">T</span> Truc &amp; Chose, avocats</a>
+      <nav class="primary">
+        <a href="index.html">Accueil</a>
+        <a href="inscription-commis.html">Inscription</a>
+        <a href="connexion.html" class="btn-nav">Connexion</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"
+        onclick="var h=document.getElementById('site-header');h.classList.toggle('nav-open');this.setAttribute('aria-expanded', h.classList.contains('nav-open'));">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="17" x2="20" y2="17"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
 
-<div class="login-wrap">
-  <div class="login-card">
-    <div class="mark" style="width:44px;height:44px;border-radius:10px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.3rem;">T</div>
-    <h2>Connexion des commis</h2>
-    <p class="sub">Accédez au système de gestion des dossiers.</p>
+  <div class="login-wrap">
+    <div class="login-card">
+      <div class="mark"
+        style="width:44px;height:44px;border-radius:10px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.3rem;">
+        T</div>
+      <h2>Connexion des commis</h2>
+      <p class="sub">Accédez au système de gestion des dossiers.</p>
 
-    <form>
-      <div class="field" style="margin-bottom:16px;">
-        <label for="usager">Nom d'utilisateur</label>
-        <input type="text" id="usager" name="usager" placeholder="ex. l.ianniroberto">
+      <form>
+        <div class="field" style="margin-bottom:16px;">
+          <label for="usager">Nom d'utilisateur</label>
+          <input type="text" id="usager" name="usager" placeholder="ex. l.ianniroberto">
+        </div>
+        <div class="field" style="margin-bottom:22px;">
+          <label for="mdp">Mot de passe</label>
+          <input type="password" id="mdp" name="mdp" placeholder="••••••••">
+        </div>
+        <button type="button" class="btn" onclick="window.location.href='liste-cas.html';">
+          Se connecter
+        </button>
+      </form>
+
+      <div class="login-foot">
+        <a href="index.html">← Retour à l'accueil</a>
       </div>
-      <div class="field" style="margin-bottom:22px;">
-        <label for="mdp">Mot de passe</label>
-        <input type="password" id="mdp" name="mdp" placeholder="••••••••">
+    </div>
+  </div>
+
+  <footer class="site">
+    <div class="wrap footer-grid">
+      <div>
+        <h4>Truc et Chose, avocats</h4>
+        <p>1200, rue Principale, bureau 21<br>Sainte-Nécropole (Québec) X1X 1X1</p>
+        <p>Téléphone : 438-873-1118</p>
       </div>
-      <button type="button" class="btn" onclick="alert('Page statique — la connexion sera fonctionnelle au module 4.');">Se connecter</button>
-    </form>
-
-    <div class="login-foot">
-      <a href="index.html">← Retour à l'accueil</a>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="inscription-commis.html">Créer un compte</a></li>
+          <li><a href="connexion.html">Connexion</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Dossiers</h4>
+        <ul>
+          <li><a href="inscription.html">Inscription d'un cas</a></li>
+          <li><a href="liste-cas.html">Liste des cas</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
-
-<footer class="site">
-  <div class="wrap footer-grid">
-    <div>
-      <h4>Truc et Chose, avocats</h4>
-      <p>1200, rue Principale, bureau 21<br>Sainte-Nécropole (Québec) X1X 1X1</p>
-      <p>Téléphone :  438-873-1118</p>
+    <div class="footer-bottom wrap">
+      Travail scolaire — Applications informatiques en administration, 410-413-FD (60.2) — Devoir 3B
     </div>
-    <div>
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="inscription-commis.html">Créer un compte</a></li>
-        <li><a href="connexion.html">Connexion</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Dossiers</h4>
-      <ul>
-        <li><a href="inscription.html">Inscription d'un cas</a></li>
-        <li><a href="liste-cas.html">Liste des cas</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom wrap">
-    Travail scolaire — Applications informatiques en administration, 410-413-FD (60.2) — Devoir 3B
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
